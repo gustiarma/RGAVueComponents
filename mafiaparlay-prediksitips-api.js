@@ -7201,7 +7201,7 @@ __webpack_require__.r(__webpack_exports__);
 
 if (typeof window !== 'undefined') {
   var currentScript = window.document.currentScript
-  if (Object({"NODE_ENV":"production","BASE_URL":"/"}).NEED_CURRENTSCRIPT_POLYFILL) {
+  if (Object({"NODE_ENV":"production","VUE_APP_CLI_UI_URL":"","BASE_URL":"/"}).NEED_CURRENTSCRIPT_POLYFILL) {
     var getCurrentScript = __webpack_require__("8875")
     currentScript = getCurrentScript()
 
@@ -7599,9 +7599,16 @@ function normalizeComponent (
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d253d1d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MafiaParlayApi.vue?vue&type=template&id=4dbf90da&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (this.prediksiTipsData != null)?_c('div',{staticClass:"prediksi-bola"},_vm._l((this.prediksiTipsData),function(items,index){return _c('div',{key:index,staticClass:"prediksi-list"},[_c('div',{staticClass:"tanggal-prediksi"},[_vm._v(" "+_vm._s(_vm.formatDateIndonesia(index))+" ")]),_vm._l((items),function(item,indexy){return _c('div',{key:indexy,staticClass:"prediksi-item"},[_c('div',{staticClass:"liga abs-center"},[_vm._v(_vm._s(item.ligainfo.name))]),_c('div',{staticClass:"waktu abs-center"},[_vm._v(" "+_vm._s(item.kickoff.split(" ")[1].slice(0, -3))+" WIB ")]),_c('div',{staticClass:"playing-team"},[_c('span',{staticClass:"home_team"},[_vm._v(_vm._s(item.home_team))]),_c('span',{staticClass:"vs"},[_vm._v(" VS ")]),_c('span',{staticClass:"away_team"},[_vm._v(_vm._s(item.away_team))])]),_c('div',{staticClass:"tips abs-center",domProps:{"innerHTML":_vm._s(item.prediksi_tips)}}),_c('div',{staticClass:"score abs-center"},[_vm._v(" "+_vm._s(item.home_score != "-" ? item.home_score : "")+" - "+_vm._s(item.away_score != "-" ? item.away_score : "")+" ")]),_c('div',{staticClass:"status abs-center"},[_vm._v(_vm._s(item.status_tips))])])})],2)}),0):_vm._e()}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d253d1d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=03b73037&shadow
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('MafiaParlayApi')],1)}
 var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=03b73037&shadow
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d253d1d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MafiaParlayApi.vue?vue&type=template&id=4dbf90da&
+var MafiaParlayApivue_type_template_id_4dbf90da_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (this.prediksiTipsData != null)?_c('div',{staticClass:"prediksi-bola"},_vm._l((this.prediksiTipsData),function(items,index){return _c('div',{key:index,staticClass:"prediksi-list"},[_c('div',{staticClass:"tanggal-prediksi"},[_vm._v(" "+_vm._s(_vm.formatDateIndonesia(index))+" ")]),_vm._l((items),function(item,indexy){return _c('div',{key:indexy,staticClass:"prediksi-item"},[_c('div',{staticClass:"liga abs-center"},[_vm._v(_vm._s(item.ligainfo.name))]),_c('div',{staticClass:"waktu abs-center"},[_vm._v(" "+_vm._s(item.kickoff.split(" ")[1].slice(0, -3))+" WIB ")]),_c('div',{staticClass:"playing-team"},[_c('span',{staticClass:"home_team"},[_vm._v(_vm._s(item.home_team))]),_c('span',{staticClass:"vs"},[_vm._v(" VS ")]),_c('span',{staticClass:"away_team"},[_vm._v(_vm._s(item.away_team))])]),_c('div',{staticClass:"tips abs-center",domProps:{"innerHTML":_vm._s(item.prediksi_tips)}}),_c('div',{staticClass:"score abs-center"},[_vm._v(" "+_vm._s(item.home_score != "-" ? item.home_score : "")+" - "+_vm._s(item.away_score != "-" ? item.away_score : "")+" ")]),_c('div',{staticClass:"status abs-center"},[_vm._v(_vm._s(item.status_tips))])])})],2)}),0):_vm._e()}
+var MafiaParlayApivue_type_template_id_4dbf90da_staticRenderFns = []
 
 
 // CONCATENATED MODULE: ./src/components/MafiaParlayApi.vue?vue&type=template&id=4dbf90da&
@@ -7781,8 +7788,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var component = normalizeComponent(
   components_MafiaParlayApivue_type_script_lang_js_,
-  render,
-  staticRenderFns,
+  MafiaParlayApivue_type_template_id_4dbf90da_render,
+  MafiaParlayApivue_type_template_id_4dbf90da_staticRenderFns,
   false,
   injectStyles,
   null,
@@ -7791,16 +7798,45 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var MafiaParlayApi = (component.exports);
-// CONCATENATED MODULE: ./src/main.js?shadow
- // import App from "./App.vue";
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&shadow
+//
+//
+//
+//
+//
+//
 
- // Vue.config.productionTip = false;
+/* harmony default export */ var Appvue_type_script_lang_js_shadow = ({
+  name: "App",
+  components: {
+    MafiaParlayApi: MafiaParlayApi
+  }
+});
+// CONCATENATED MODULE: ./src/App.vue?vue&type=script&lang=js&shadow
+ /* harmony default export */ var src_Appvue_type_script_lang_js_shadow = (Appvue_type_script_lang_js_shadow); 
+// CONCATENATED MODULE: ./src/App.vue?shadow
 
 
-const CustomElement = vue_wc_wrapper(external_Vue_default.a, MafiaParlayApi);
-window.customElements.define("mafiaparlay-prediksitips-api", CustomElement); // new Vue({
-//   render: (h) => h(App),
-// }).$mount("#app");
+
+function Appshadow_injectStyles (context) {
+  
+  
+}
+
+/* normalize component */
+
+var Appshadow_component = normalizeComponent(
+  src_Appvue_type_script_lang_js_shadow,
+  render,
+  staticRenderFns,
+  false,
+  Appshadow_injectStyles,
+  null,
+  null
+  ,true
+)
+
+/* harmony default export */ var Appshadow = (Appshadow_component.exports);
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-wc.js
 
 
@@ -7812,7 +7848,7 @@ window.customElements.define("mafiaparlay-prediksitips-api", CustomElement); // 
 
 
 
-window.customElements.define('mafiaparlay-prediksitips-api', vue_wc_wrapper(external_Vue_default.a, /* Cannot get final name for export "default" in "./src/main.js?shadow" (known exports: , known reexports: ) */ undefined))
+window.customElements.define('mafiaparlay-prediksitips-api', vue_wc_wrapper(external_Vue_default.a, Appshadow))
 
 /***/ }),
 
