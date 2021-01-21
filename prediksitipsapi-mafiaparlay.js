@@ -7848,7 +7848,7 @@ var Appshadow_component = normalizeComponent(
 
 
 
-window.customElements.define('mafiaparlay-prediksitips-api', vue_wc_wrapper(external_Vue_default.a, Appshadow))
+window.customElements.define('prediksitipsapi-mafiaparlay', vue_wc_wrapper(external_Vue_default.a, Appshadow))
 
 /***/ }),
 
@@ -24255,4 +24255,4 @@ module.exports.__inject__ = function (shadowRoot) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=mafiaparlay-prediksitips-api.js.map
+//# sourceMappingURL=prediksitipsapi-mafiaparlay.js.map
